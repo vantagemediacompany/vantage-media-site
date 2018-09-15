@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include background;
+    background: $mask-color;
+    color: set-text-color(#fff);
+    height: 100%;
+    margin: 0;
+    font-family: "CodeBold";
+    line-height: 1.5;
+}
