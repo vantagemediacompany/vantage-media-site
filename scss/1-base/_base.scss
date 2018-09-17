@@ -1,7 +1,7 @@
 $primary-color: #5c7887;
 $secondary-color: #3d4f65;
-$logo-primary:#000;
-$logo-secondary:#fff;
+$logo-primary: #000;
+$logo-secondary: #fff;
 $mask-color: #333;
 $show-home-image: true;
 $home-image: url(../img/landingBG.jpeg);
@@ -50,6 +50,11 @@ $background-opacity: 0;
     @else {
         @return #fff;
     }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
 // Media Query Mixins

@@ -1,12 +1,51 @@
-.icons {
-  position: absolute;
-  top: 35px;
-  right: 35px;
-  a {
-    padding: 0.4rem;
-    &:hover {
-      color: $primary-color;
-      @include easeOut();
-    }
-  }
+.menu-btn {
+    position: fixed;
+    margin: 1.4em;
+    padding: 1em;
+    width: 40px;
+    height: 12px;
+    right: 35px;
+    z-index: 3;
+}
+
+.btn-line-one {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: $logo-secondary;
+}
+
+.btn-line-two {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    margin-top: 12px;
+    background: $logo-secondary;
+}
+
+.menu {
+    z-index: 1;
+    position: absolute;
+    background: $mask-color;
+    height: 100vh;
+    width: 100%;
+    top: -100%;}
+
+.menu-nav {
+    padding: 8em 0 0 2em;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    columns: $logo-secondary;
+    font-family: "CodeLight";
+    font-size: 42px;
+}
+
+.current {
+    color: $primary-color;
+    font-family: "CodeBold";
+    font-size: 24px;
 }

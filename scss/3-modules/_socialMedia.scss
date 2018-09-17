@@ -1,0 +1,13 @@
+.icons {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    a {
+        padding: 0.4rem;
+        &:hover {
+            color: $primary-color;
+            @include easeOut();
+        }
+    }
+}
