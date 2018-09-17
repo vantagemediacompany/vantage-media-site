@@ -59,6 +59,20 @@ main#home {
     left: 50%;
     transform: translate(-50%, -50%); }
 
+.menu-branding {
+  position: fixed;
+  top: 35px;
+  left: 35px;
+  font-size: 1.5em;
+  color: #fff;
+  letter-spacing: 3px; }
+  .menu-branding .brand-secondary {
+    font-family: "CodeLight"; }
+  .menu-branding .current-nav {
+    font-size: 0.5em;
+    vertical-align: 25%;
+    font-family: "CodeBold"; }
+
 .menu-btn {
   position: fixed;
   margin: 1.4em;
@@ -66,7 +80,14 @@ main#home {
   width: 40px;
   height: 12px;
   right: 35px;
-  z-index: 3; }
+  z-index: 3;
+  cursor: pointer; }
+  .menu-btn .menu-span {
+    position: relative;
+    color: #fff;
+    top: 2px;
+    left: 1px;
+    font-family: "CodeLight"; }
 
 .btn-line-one {
   position: absolute;
@@ -78,7 +99,6 @@ main#home {
   position: absolute;
   width: 40px;
   height: 2px;
-  margin-top: 12px;
   background: #fff; }
 
 .menu {
@@ -101,7 +121,7 @@ ul {
   font-size: 42px; }
 
 .current {
-  color: #5c7887;
+  color: gray;
   font-family: "CodeBold";
   font-size: 24px; }
 
