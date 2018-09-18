@@ -104,7 +104,7 @@ main#home {
 .menu {
   z-index: 1;
   position: absolute;
-  background: #333;
+  background: #3d4f65;
   height: 100vh;
   width: 100%;
   top: -100%; }
@@ -121,7 +121,7 @@ ul {
   font-size: 42px; }
 
 .current {
-  color: gray;
+  color: #5c7887;
   font-family: "CodeBold";
   font-size: 24px; }
 

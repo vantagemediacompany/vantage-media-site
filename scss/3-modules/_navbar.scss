@@ -52,7 +52,7 @@
 .menu {
   z-index: 1;
   position: absolute;
-  background: $mask-color;
+  background: $secondary-color;
   height: 100vh;
   width: 100%;
   top: -100%;
@@ -72,7 +72,7 @@ ul {
 }
 
 .current {
-  color: gray;
+  color: $primary-color;
   font-family: "CodeBold";
   font-size: 24px;
 }
