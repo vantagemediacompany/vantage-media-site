@@ -1,0 +1,53 @@
+.contact-header {
+  color: $logo-secondary;
+  font-size: 3em;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  input {
+    width: 100%;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 2px solid $logo-secondary;
+  }
+  #msg {
+    margin-top: 40px;
+  }
+  #contact-button {
+    position: relative;
+    left: -8px;
+    font-size: 22px;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    margin-top: 3px;
+    color: $logo-secondary;
+    &:hover {
+      cursor: pointer;
+      color: $secondary-color;
+      .fa-angle-right {
+        color: $secondary-color;
+      }
+    }
+  }
+  .fa-angle-right {
+    color: $logo-secondary;
+    padding-left: 10px;
+    vertical-align: -3%;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: $logo-secondary;
+  font-size: 12px;
+  letter-spacing: 2px;
+}

@@ -87,6 +87,51 @@ p {
 .bg-dark {
   color: #f4f4f4; }
 
+.contact-header {
+  color: #f4f4f4;
+  font-size: 3em;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.contact-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .contact-form input {
+    width: 100%;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 2px solid #f4f4f4; }
+  .contact-form #msg {
+    margin-top: 40px; }
+  .contact-form #contact-button {
+    position: relative;
+    left: -8px;
+    font-size: 22px;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    margin-top: 3px;
+    color: #f4f4f4; }
+    .contact-form #contact-button:hover {
+      cursor: pointer;
+      color: #3d4f65; }
+      .contact-form #contact-button:hover .fa-angle-right {
+        color: #3d4f65; }
+  .contact-form .fa-angle-right {
+    color: #f4f4f4;
+    padding-left: 10px;
+    vertical-align: -3%; }
+
+::-webkit-input-placeholder {
+  color: #f4f4f4;
+  font-size: 12px;
+  letter-spacing: 2px; }
+
 .menu-branding {
   position: fixed;
   top: 35px;

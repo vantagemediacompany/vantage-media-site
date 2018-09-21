@@ -72,5 +72,7 @@ $(document).ready(function() {
     distance: "300px"
   });
 
+  // Send email with form submit
+
   // Closing tag for document.ready
 });
