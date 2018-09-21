@@ -26,6 +26,10 @@ alertify@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/alertify/-/alertify-0.3.0.tgz#32ada3298ff4d91ace71f2746d70910a7bd08135"
 
+alertifyjs@^1.11.1:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/alertifyjs/-/alertifyjs-1.11.1.tgz#e40e45c4fde4234467cc481b936fe6337e6a4828"
+
 amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"

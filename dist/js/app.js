@@ -73,6 +73,5 @@ $(document).ready(function() {
   });
 
   // Send email with form submit
-
   // Closing tag for document.ready
 });
