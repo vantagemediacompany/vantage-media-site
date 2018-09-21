@@ -14,8 +14,8 @@ a {
   box-sizing: border-box; }
 
 body {
-  background: #333;
-  color: #000;
+  background: #5c7887;
+  color: #333;
   height: 100%;
   margin: 0;
   font-family: "CodeBold";
@@ -42,14 +42,14 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    color: #fff;
+    color: #f4f4f4;
     letter-spacing: 10px;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem; }
 
 .text-secondary {
   font-family: "CodeLight";
-  color: #fff; }
+  color: #f4f4f4; }
 
 main#home {
   overflow: hidden; }
@@ -59,12 +59,40 @@ main#home {
     left: 50%;
     transform: translate(-50%, -50%); }
 
+.center {
+  text-align: center;
+  margin: auto; }
+
+p {
+  font-family: "CodeBold";
+  font-size: 12px;
+  letter-spacing: 1.5px; }
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem; }
+
+.services {
+  padding-top: 40px; }
+  .services .services-font-size {
+    font-size: 25px; }
+
+.grid-3 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr); }
+
+.bg-dark {
+  color: #f4f4f4; }
+
 .menu-branding {
   position: fixed;
   top: 35px;
   left: 35px;
   font-size: 1.5em;
-  color: #fff;
+  color: #f4f4f4;
   letter-spacing: 3px; }
   .menu-branding .brand-secondary {
     font-family: "CodeLight"; }
@@ -84,7 +112,7 @@ main#home {
   cursor: pointer; }
   .menu-btn .menu-span {
     position: relative;
-    color: #fff;
+    color: #f4f4f4;
     top: 2px;
     left: 1px;
     font-family: "CodeLight"; }
@@ -93,13 +121,13 @@ main#home {
   position: absolute;
   width: 40px;
   height: 2px;
-  background: #fff; }
+  background: #f4f4f4; }
 
 .btn-line-two {
   position: absolute;
   width: 40px;
   height: 2px;
-  background: #fff; }
+  background: #f4f4f4; }
 
 .menu {
   z-index: 1;
@@ -116,7 +144,7 @@ main#home {
 ul {
   list-style: none;
   text-decoration: none;
-  columns: #fff;
+  columns: #f4f4f4;
   font-family: "CodeLight";
   font-size: 42px; }
 

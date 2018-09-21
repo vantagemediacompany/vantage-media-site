@@ -1,43 +1,43 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    @include background;
-    background: $mask-color;
-    color: set-text-color($logo-secondary);
-    height: 100%;
-    margin: 0;
-    font-family: "CodeBold";
-    line-height: 1.5;
+  @include background;
+  background: $primary-color;
+  color: set-text-color($logo-secondary);
+  height: 100%;
+  margin: 0;
+  font-family: "CodeBold";
+  line-height: 1.5;
 }
 
 h1,
 h2,
 h3 {
-    margin: 0;
-    font-weight: 400;
-    &.sm-heading {
-        color: $logo-secondary;
-        letter-spacing: 10px;
-        margin-bottom: 2rem;
-        padding: 0.2rem 1rem;
-    }
+  margin: 0;
+  font-weight: 400;
+  &.sm-heading {
+    color: $logo-secondary;
+    letter-spacing: 10px;
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+  }
 }
 
 .text-secondary {
-    font-family: "CodeLight";
-    color: $logo-secondary;
+  font-family: "CodeLight";
+  color: $logo-secondary;
 }
 
 main {
-    &#home {
-        overflow: hidden;
-        .sm-heading {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+  &#home {
+    overflow: hidden;
+    .sm-heading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
+  }
 }
