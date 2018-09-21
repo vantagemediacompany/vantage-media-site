@@ -65,6 +65,12 @@ $(document).ready(function() {
     origin: "bottom",
     distance: "300px"
   });
+  sr.reveal(".services", {
+    mobile: false,
+    duration: 2000,
+    origin: "bottom",
+    distance: "300px"
+  });
 
   // Closing tag for document.ready
 });
