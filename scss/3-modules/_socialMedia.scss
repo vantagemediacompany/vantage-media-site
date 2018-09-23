@@ -5,8 +5,9 @@
     transform: translate(-50%, -50%);
     a {
         padding: 0.4rem;
+        color: $logo-secondary;
         &:hover {
-            color: $primary-color;
+            color: $secondary-color;
             @include easeOut();
         }
     }
