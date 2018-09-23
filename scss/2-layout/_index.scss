@@ -2,14 +2,15 @@
     box-sizing: border-box;
 }
 
-body {
-    @include background;
-    background: $primary-color;
+body,
+html {
+    background-color: $primary-color;
     color: set-text-color($logo-secondary);
     height: 100%;
     margin: 0;
-    font-family: "CodeBold";
+    font-family: "CodeBold", sans-serif;
     line-height: 1.5;
+    font-size: 16px;
 }
 
 // Keyframes
@@ -20,35 +21,60 @@ body {
     }
 }
 
-h1,
-h2,
-h3 {
-    margin: 0;
-    font-weight: 400;
-    &.sm-heading {
+.pimg1,
+.pimg2,
+.pimg3 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section {
+    line-height: 1.8em;
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: $logo-secondary;
+    color: #666;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: $logo-secondary;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    &.landing-phrase {
         color: $logo-secondary;
         letter-spacing: 10px;
-        margin-bottom: 2rem;
-        padding: 0.2rem 1rem;
         font-size: 1.25rem;
     }
 }
 
-.text-secondary {
-    font-family: "CodeLight";
-    color: $logo-secondary;
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
 }
 
-main {
-    &#home {
-        overflow: hidden;
-        .sm-heading {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
+.pimg1 {
+    background-image: $home-image;
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: $home-image-2;
+    min-height: 400px;
+}
+
+.pimg3 {
+    background-image: $home-image-3;
+    min-height: 400px;
 }
 
 .scroll-down {
