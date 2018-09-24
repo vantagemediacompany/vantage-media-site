@@ -1,14 +1,14 @@
 .icons {
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    a {
-        padding: 0.4rem;
-        color: $logo-secondary;
-        &:hover {
-            color: $secondary-color;
-            @include easeOut();
-        }
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  a {
+    padding: 0.4rem;
+    color: $logo-secondary;
+    &:hover {
+      color: $primary-color;
+      @include easeOut();
     }
+  }
 }

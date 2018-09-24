@@ -8,8 +8,17 @@
     z-index: 3;
     transition: 0.3s;
     &.black {
-        background: rgba(51, 51, 51, 0.8);
+        background: $logo-secondary;
         height: 100px;
+        .menu-span,
+        .menu-branding,
+        .menu {
+            color: $secondary-color;
+        }
+        .btn-line-one,
+        .btn-line-two {
+            background-color: $secondary-color;
+        }
     }
 }
 

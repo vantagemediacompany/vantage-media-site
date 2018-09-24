@@ -15,7 +15,7 @@ a {
 
 body,
 html {
-  background-color: #5c7887;
+  background-color: #3d4f65;
   color: #333;
   height: 100%;
   margin: 0;
@@ -42,10 +42,6 @@ html {
   text-align: center;
   padding: 50px 80px; }
 
-.section-light {
-  background-color: #f4f4f4;
-  color: #666; }
-
 .ptext {
   position: absolute;
   top: 50%;
@@ -59,9 +55,13 @@ html {
     letter-spacing: 10px;
     font-size: 1.25rem; }
 
+.section-light {
+  background-color: #f4f4f4;
+  color: #3d4f65; }
+
 .section-dark {
-  background-color: #282e34;
-  color: #ddd; }
+  background-color: #3d4f65;
+  color: #f4f4f4; }
 
 .pimg1 {
   background-image: url(../img/landingBG.jpeg);
@@ -189,8 +189,15 @@ p {
   z-index: 3;
   transition: 0.3s; }
   .navbar.black {
-    background: rgba(51, 51, 51, 0.8);
+    background: #f4f4f4;
     height: 100px; }
+    .navbar.black .menu-span,
+    .navbar.black .menu-branding,
+    .navbar.black .menu {
+      color: #3d4f65; }
+    .navbar.black .btn-line-one,
+    .navbar.black .btn-line-two {
+      background-color: #3d4f65; }
 
 .menu-branding {
   position: fixed;
@@ -270,5 +277,5 @@ ul {
     padding: 0.4rem;
     color: #f4f4f4; }
     .icons a:hover {
-      color: #3d4f65;
+      color: #5c7887;
       transition: all 0.5s ease-out; }
