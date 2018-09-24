@@ -39,6 +39,15 @@ $(document).ready(function() {
     t1.reversed(!t1.reversed());
   });
 
+  // NavBar black animation on scroll
+  $(window).on("scroll", function() {
+    if ($(window).scrollTop()) {
+      $(".navbar").addClass("black");
+    } else {
+      $(".navbar").removeClass("black");
+    }
+  });
+
   //   Scroll reveal animations
   window.sr = ScrollReveal();
   sr.reveal(".menu-btn", {

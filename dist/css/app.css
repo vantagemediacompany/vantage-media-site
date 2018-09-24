@@ -76,7 +76,7 @@ html {
   min-height: 400px; }
 
 .scroll-down {
-  position: fixed;
+  position: absolute;
   z-index: 1;
   transition: transform 0.5s 1.5s, opacity 0.3s 1.7s, z-index 0.5s 1.5s;
   font-size: 1.25rem;
@@ -180,6 +180,18 @@ p {
   font-size: 12px;
   letter-spacing: 2px; }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 3;
+  transition: 0.3s; }
+  .navbar.black {
+    background: rgba(51, 51, 51, 0.8);
+    height: 100px; }
+
 .menu-branding {
   position: fixed;
   top: 35px;
@@ -212,20 +224,22 @@ p {
     font-family: "CodeLight"; }
 
 .btn-line-one {
-  position: absolute;
+  position: fixed;
   width: 40px;
   height: 2px;
-  background: #f4f4f4; }
+  background: #f4f4f4;
+  z-index: 3; }
 
 .btn-line-two {
-  position: absolute;
+  position: fixed;
   width: 40px;
   height: 2px;
-  background: #f4f4f4; }
+  background: #f4f4f4;
+  z-index: 3; }
 
 .menu {
   z-index: 2;
-  position: absolute;
+  position: fixed;
   background: #3d4f65;
   height: 100vh;
   width: 100%;
