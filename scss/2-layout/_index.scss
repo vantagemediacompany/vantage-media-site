@@ -1,113 +1,119 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body,
 html {
-  background-color: $secondary-color;
-  color: set-text-color($logo-secondary);
-  height: 100%;
-  margin: 0;
-  font-family: "CodeBold", sans-serif;
-  line-height: 1.5;
-  font-size: 16px;
+    background-color: $secondary-color;
+    color: set-text-color($logo-secondary);
+    height: 100%;
+    margin: 0;
+    font-family: "CodeBold", sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
 }
 
 // Keyframes
 @keyframes arrowMove {
-  to {
-    transform: rotate(45deg) translateY(2rem) translateX(2rem);
-    opacity: 0;
-  }
+    to {
+        transform: rotate(45deg) translateY(2rem) translateX(2rem);
+        opacity: 0;
+    }
 }
 
 .pimg1,
 .pimg2,
-.pimg3 {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.pimg3,
+.pimg4 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .section {
-  line-height: 1.8em;
-  text-align: center;
-  padding: 50px 80px;
+    line-height: 1.8em;
+    text-align: center;
+    padding: 50px 80px;
 }
 
 .ptext {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: $logo-secondary;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-  &.landing-phrase {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
     color: $logo-secondary;
-    letter-spacing: 10px;
-    font-size: 1.25rem;
-  }
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    &.landing-phrase {
+        color: $logo-secondary;
+        letter-spacing: 10px;
+        font-size: 1.25rem;
+    }
 }
 
 .section-light {
-  background-color: $logo-secondary;
-  color: $secondary-color;
+    background-color: $logo-secondary;
+    color: $secondary-color;
 }
 
 .section-dark {
-  background-color: $secondary-color;
-  color: $logo-secondary;
+    background-color: $secondary-color;
+    color: $logo-secondary;
 }
 
 .pimg1 {
-  background-image: $home-image;
-  min-height: 100%;
+    background-image: $home-image;
+    min-height: 100%;
 }
 
 .pimg2 {
-  background-image: $home-image-2;
-  min-height: 400px;
+    background-image: $home-image-2;
+    min-height: 400px;
 }
 
 .pimg3 {
-  background-image: $home-image-3;
-  min-height: 400px;
+    background-image: $home-image-3;
+    min-height: 400px;
+}
+
+.pimg4 {
+    background-image: $home-image-4;
+    min-height: 250px;
 }
 
 .scroll-down {
-  position: absolute;
-  z-index: 1;
-  transition: transform 0.5s 1.5s, opacity 0.3s 1.7s, z-index 0.5s 1.5s;
-  font-size: 1.25rem;
-  bottom: 4rem;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  color: $logo-secondary;
-  width: 30rem;
-  text-align: center;
-  &.removed {
-    transform: translateY(-20rem);
-    opacity: 0;
-    z-index: -10;
-    transition: transform 0.5s, opacity 0.3s 0.2s, z-index 0.5s;
-  }
-  &:after {
-    content: "";
     position: absolute;
-    display: block;
-    bottom: -1.5rem;
-    left: 47%;
+    z-index: 1;
+    transition: transform 0.5s 1.5s, opacity 0.3s 1.7s, z-index 0.5s 1.5s;
+    font-size: 1.25rem;
+    bottom: 4rem;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: 1.5rem;
-    height: 1.5rem;
-    border: 0.15rem solid $logo-secondary;
-    border-left: none;
-    border-top: none;
-    transform: rotate(45deg);
-    animation: arrowMove 1.2s infinite;
-  }
+    transform: translate(-50%, -50%);
+    color: $logo-secondary;
+    width: 30rem;
+    text-align: center;
+    &.removed {
+        transform: translateY(-20rem);
+        opacity: 0;
+        z-index: -10;
+        transition: transform 0.5s, opacity 0.3s 0.2s, z-index 0.5s;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: -1.5rem;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 0.15rem solid $logo-secondary;
+        border-left: none;
+        border-top: none;
+        transform: rotate(45deg);
+        animation: arrowMove 1.2s infinite;
+    }
 }
