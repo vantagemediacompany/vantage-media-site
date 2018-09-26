@@ -62,7 +62,7 @@ $(document).ready(function() {
     origin: "left",
     distance: "300px"
   });
-  sr.reveal(".sm-heading", {
+  sr.reveal(".border", {
     mobile: false,
     duration: 2000,
     origin: "bottom",
@@ -70,7 +70,7 @@ $(document).ready(function() {
   });
   sr.reveal(".icons", {
     mobile: false,
-    duration: 2000,
+    duration: 1000,
     origin: "bottom",
     distance: "300px"
   });
@@ -79,6 +79,18 @@ $(document).ready(function() {
     duration: 2000,
     origin: "bottom",
     distance: "300px"
+  });
+  sr.reveal(".bottomFadeIn", {
+    mobile: false,
+    duration: 1000,
+    origin: "bottom",
+    distance: "300px"
+  });
+  sr.reveal(".topFadeIn", {
+    mobile: false,
+    duration: 1000,
+    origin: "top",
+    distance: "50px"
   });
 
   // Send email with form submit
