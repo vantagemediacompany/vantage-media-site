@@ -146,13 +146,10 @@ html {
   .services .services-font-size {
     font-size: 25px; }
 
-.grid-3 {
+.grid-2 {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr); }
-
-.bg-dark {
-  color: #f4f4f4; }
+  grid-template-columns: repeat(2, 1fr); }
 
 .page-header-services {
   background-image: url(../img/servicesBG.jpeg);

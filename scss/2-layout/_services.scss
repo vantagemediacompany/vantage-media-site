@@ -1,65 +1,61 @@
 .container {
-    max-width: 960px;
-    margin: auto;
-    overflow: hidden;
-    padding: 4rem 1rem;
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
 }
 
 .services {
-    padding-top: 40px;
-    .services-font-size {
-        font-size: 25px;
-    }
+  padding-top: 40px;
+  .services-font-size {
+    font-size: 25px;
+  }
 }
 
-.grid-3 {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.bg-dark {
-    color: #f4f4f4;
+.grid-2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .page-header-services {
-    background-image: $services-image;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: $primary-color;
+  background-image: $services-image;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $primary-color;
+  width: 100%;
+  height: 50vh;
+  .mask {
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 100%;
     height: 50vh;
-    .mask {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 50vh;
-        background-color: $mask-color;
-        z-index: 1;
-        opacity: $mask-opacity;
-    }
-    .header-title {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 6rem;
-        letter-spacing: 1rem;
-        color: $logo-secondary;
-        z-index: 2;
-    }
-    .cloud {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 50vh;
-        background: $header-cloud;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        animation: clouds 60s linear infinite;
-    }
+    background-color: $mask-color;
+    z-index: 1;
+    opacity: $mask-opacity;
+  }
+  .header-title {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    letter-spacing: 1rem;
+    color: $logo-secondary;
+    z-index: 2;
+  }
+  .cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background: $header-cloud;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: clouds 60s linear infinite;
+  }
 }
