@@ -70,25 +70,25 @@ $(document).ready(function() {
   });
   sr.reveal(".icons", {
     mobile: false,
-    duration: 1000,
+    duration: 500,
     origin: "bottom",
     distance: "300px"
   });
   sr.reveal(".services", {
     mobile: false,
-    duration: 2000,
+    duration: 1000,
     origin: "bottom",
     distance: "300px"
   });
   sr.reveal(".bottomFadeIn", {
     mobile: false,
-    duration: 1000,
+    duration: 500,
     origin: "bottom",
     distance: "300px"
   });
   sr.reveal(".topFadeIn", {
     mobile: false,
-    duration: 1000,
+    duration: 500,
     origin: "top",
     distance: "50px"
   });
