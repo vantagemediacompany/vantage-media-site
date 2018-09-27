@@ -78,9 +78,18 @@ html {
     min-height: 400px;
 }
 
+.border {
+    font-size: 1.25em;
+}
+
 .pimg4 {
     background-image: $home-image-4;
     min-height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #666;
+    background-blend-mode: multiply;
 }
 
 .scroll-down {

@@ -70,7 +70,7 @@ $(document).ready(function() {
   });
   sr.reveal(".icons", {
     mobile: false,
-    duration: 500,
+    duration: 250,
     origin: "bottom",
     distance: "300px"
   });
@@ -84,7 +84,7 @@ $(document).ready(function() {
     mobile: false,
     duration: 500,
     origin: "bottom",
-    distance: "300px"
+    distance: "50px"
   });
   sr.reveal(".topFadeIn", {
     mobile: false,
