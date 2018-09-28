@@ -20,6 +20,10 @@ a {
   text-align: center;
   margin: auto; }
 
+.left {
+  text-align: left;
+  margin: auto; }
+
 p {
   font-family: "CodeBold";
   font-size: 12px;
@@ -149,7 +153,9 @@ html {
   font-size: 2rem; }
 
 .service-catch-line {
-  font-size: 1rem; }
+  font-size: 1rem;
+  letter-spacing: 1.35px;
+  color: #666; }
 
 .service-header {
   background-color: #efefef;
