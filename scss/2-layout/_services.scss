@@ -1,88 +1,113 @@
 .container {
-  position: relative;
-  margin: auto;
-  overflow: hidden;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
 }
 
 .grid-2 {
-  display: grid;
-  grid-gap: 100px;
-  grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .service-description {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .service-catch-line {
-  font-size: 1rem;
-  letter-spacing: 1.35px;
-  color: #666;
+    font-size: 1rem;
+    letter-spacing: 1.35px;
+    color: #666;
+}
+
+.service-text {
+    font-family: "CodeLight";
+    line-height: 2rem;
 }
 
 .service-header {
-  background-color: $service-color-header;
-  padding: 6rem 10rem;
-  color: $logo-primary;
-  .header-bold {
-    font-size: 3rem;
-  }
-  .header-text {
-    font-size: 1.5rem;
-    font-family: "CodeLight";
-    letter-spacing: 1.25px;
-  }
+    background-color: $service-color-header;
+    padding: 6rem 10rem;
+    color: $logo-primary;
+    .header-bold {
+        font-size: 3rem;
+    }
+    .header-text {
+        font-size: 1.5rem;
+        font-family: "CodeLight";
+        letter-spacing: 1.25px;
+    }
 }
 
 .design {
-  background-color: $service-color-1;
-  padding: 12rem 10rem;
-  .service-media img {
-    border-radius: 15px 50px 30px;
-  }
-  .service-text {
-    font-family: "CodeLight";
-  }
+    background-color: $service-color-1;
+    padding: 12rem 10rem;
+    .service-description {
+        color: #202020;
+    }
+    .service-catch-line {
+        color: #959595;
+    }
+    .service-media img {
+        border-radius: 15px 50px 30px;
+    }
+}
+
+.marketing {
+    background-color: $service-color-2;
+    padding: 12rem 10rem;
+    .service-media img {
+        border-radius: 30px 50px 15px;
+    }
+    .service-description {
+        color: #fff;
+    }
+    .service-catch-line {
+        color: #7c7c7d
+    }
+    .service-text {
+        color: #f6f6f6;
+    }
 }
 
 .page-header-services {
-  background-image: $services-image;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: $primary-color;
-  width: 100%;
-  height: 50vh;
-  .mask {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 50vh;
-    background-color: $mask-color;
-    z-index: 1;
-    opacity: $mask-opacity;
-  }
-  .header-title {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 6rem;
-    letter-spacing: 1rem;
-    color: $logo-secondary;
-    z-index: 2;
-  }
-  .cloud {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50vh;
-    background: $header-cloud;
+    background-image: $services-image;
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
-    animation: clouds 60s linear infinite;
-  }
+    background-repeat: no-repeat;
+    background-color: $primary-color;
+    width: 100%;
+    height: 50vh;
+    .mask {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 50vh;
+        background-color: $mask-color;
+        z-index: 1;
+        opacity: $mask-opacity;
+    }
+    .header-title {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 6rem;
+        letter-spacing: 1rem;
+        color: $logo-secondary;
+        z-index: 2;
+    }
+    .cloud {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+        background: $header-cloud;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        animation: clouds 60s linear infinite;
+    }
 }
