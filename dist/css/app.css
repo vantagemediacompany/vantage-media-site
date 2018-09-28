@@ -145,6 +145,12 @@ html {
   grid-gap: 100px;
   grid-template-columns: repeat(2, 1fr); }
 
+.service-description {
+  font-size: 2rem; }
+
+.service-catch-line {
+  font-size: 1rem; }
+
 .service-header {
   background-color: #efefef;
   padding: 6rem 10rem;
@@ -161,6 +167,8 @@ html {
   padding: 12rem 10rem; }
   .design .service-media img {
     border-radius: 15px 50px 30px; }
+  .design .service-text {
+    font-family: "CodeLight"; }
 
 .page-header-services {
   background-image: url(../img/servicesBG.jpeg);
