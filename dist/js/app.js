@@ -92,6 +92,18 @@ $(document).ready(function() {
     origin: "top",
     distance: "50px"
   });
+  sr.reveal(".leftFadeIn", {
+    mobile: false,
+    duration: 500,
+    origin: "left",
+    distance: "50px"
+  });
+  sr.reveal(".rightFadeIn", {
+    mobile: false,
+    duration: 500,
+    origin: "right",
+    distance: "50px"
+  });
 
   // Send email with form submit
   // Closing tag for document.ready
