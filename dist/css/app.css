@@ -194,6 +194,30 @@ html {
   .marketing .service-text {
     color: #f6f6f6; }
 
+.tailor {
+  background-color: #26292b;
+  padding: 12rem 10rem; }
+  .tailor .service-description {
+    color: #fff; }
+  .tailor .service-catch-line {
+    color: #959595; }
+  .tailor .service-text {
+    color: #c9cacb; }
+  .tailor .service-media img {
+    border-radius: 15px 50px 30px; }
+
+.versatile {
+  background-color: #191c1c;
+  padding: 12rem 10rem; }
+  .versatile .service-media img {
+    border-radius: 30px 50px 15px; }
+  .versatile .service-description {
+    color: #fff; }
+  .versatile .service-catch-line {
+    color: #959595; }
+  .versatile .service-text {
+    color: #fff; }
+
 .page-header-services {
   background-image: url(../img/servicesBG.jpeg);
   background-size: cover;
