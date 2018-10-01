@@ -183,19 +183,19 @@ html {
     border-radius: 15px 50px 30px; }
 
 .marketing {
-  background-color: #434848;
+  background-color: #4e667a;
   padding: 12rem 10rem; }
   .marketing .service-media img {
     border-radius: 30px 50px 15px; }
   .marketing .service-description {
     color: #fff; }
   .marketing .service-catch-line {
-    color: #7c7c7d; }
+    color: #959595; }
   .marketing .service-text {
     color: #f6f6f6; }
 
 .tailor {
-  background-color: #26292b;
+  background-color: #465b70;
   padding: 12rem 10rem; }
   .tailor .service-description {
     color: #fff; }
@@ -207,7 +207,7 @@ html {
     border-radius: 15px 50px 30px; }
 
 .versatile {
-  background-color: #191c1c;
+  background-color: #3d4f65;
   padding: 12rem 10rem; }
   .versatile .service-media img {
     border-radius: 30px 50px 15px; }
@@ -421,7 +421,7 @@ ul {
   z-index: 3; }
 
 .current {
-  color: #5c7887;
+  color: #f4f4f4;
   font-family: "CodeBold";
   font-size: 24px; }
 
