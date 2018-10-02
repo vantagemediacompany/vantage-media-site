@@ -37,7 +37,8 @@
         <a href="index.html">
             <div class="menu-branding">
 
-                <div class="logo">Vantage<span class="brand-secondary"> Media |</span><span class="current-nav"> CONTACT
+                <div class="logo">Vantage<span class="brand-secondary"> Media |</span><span class="current-nav">
+                        CONTACT
                         US
                     </span></div>
             </div>
@@ -76,20 +77,22 @@
                 <h3 class="center">Let's Talk!</h3>
                 <p class="center">Contact us for custom quote</p>
                 <form class="center" id="contact" action="" method="post">
+                    <div class="grid-3">
+                        <fieldset>
+                            <input placeholder="Your name*" type="text" tabindex="1" required autofocus>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Your Email Address*" type="email" tabindex="2" required>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
+                        </fieldset>
+                    </div>
                     <fieldset>
-                        <input placeholder="Your name*" type="text" tabindex="1" required autofocus>
-                    </fieldset>
-                    <fieldset>
-                        <input placeholder="Your Email Address*" type="email" tabindex="2" required>
-                    </fieldset>
-                    <fieldset>
-                        <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
-                    </fieldset>
-                    <fieldset class="full">
                         <textarea placeholder="Project Description*" tabindex="4" required></textarea>
                     </fieldset>
-                    <fieldset class="full">
-                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    <fieldset>
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send!</button>
                     </fieldset>
             </div>
         </div>

@@ -1,89 +1,153 @@
 .contact-section {
+  position: relative;
+  background-image: $contactsBG;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+  h3 {
+    color: $logo-secondary;
+    font-size: 3em;
+  }
+  p {
+    color: $logo-secondary;
+    font-size: 1.25em;
+    padding-bottom: 25px;
+  }
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 2em 10em 5em;
+  }
+  input {
+    width: 100%;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid rgba($logo-secondary, 0.5);
+    color: rgba($logo-secondary, 0.5);
+    &:focus {
+      border-bottom: 1px solid $logo-secondary;
+      color: $logo-secondary;
+      outline: 0;
+    }
+  }
+  button {
     position: relative;
-    background-image: $contactsBG;
-    background-size: cover;
-    background-position: center;
-    h3 {
-        color: $logo-secondary;
-        font-size: 3em;
+    background: none;
+    color: $logo-secondary;
+    width: 240px;
+    height: 80px;
+    border: 1px solid $logo-secondary;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    transition: 0.6s;
+    overflow: hidden;
+    &:focus {
+      outline: none;
     }
-    p {
-        color: $logo-secondary;
-        font-size: 1.25em;
-        padding-bottom: 25px;
+    :before {
+      content: "";
+      display: block;
+      position: absolute;
+      background: rgba(255, 255, 255, 0.5);
+      width: 60px;
+      height: 100%;
+      left: 0;
+      top: 0;
+      opacity: 0.5s;
+      filter: blur(30px);
+      transform: translatex(-130px) skewx(-15deg);
     }
-    form {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 30px;
-        .full {
-            grid-column: 1 / 3;
-        }
-        padding: 2em 10em 5em;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      background: rgba(255, 255, 255, 2);
+      width: 30px;
+      height: 100%;
+      left: 30px;
+      top: 0;
+      opacity: 0;
+      filter: blur(30px);
+      transform: translate(-100px) scaleX(-15deg);
     }
-    input,
-    textarea {
-        width: 100%;
-        margin: 20px 0;
-        background: rgba(0, 0, 0, 0);
-        border: none;
-        border-bottom: 1px solid rgba($logo-secondary, 0.5);
-        color: rgba($logo-secondary, .5);
-        &:focus {
-            border-bottom: 1px solid $logo-secondary;
-            color: $logo-secondary;
-            outline: 0;
-        }
+    &:hover {
+      background: $primary-color;
+      cursor: pointer;
+      &:before {
+        transform: translateX(300px) skewX(-15deg);
+        opacity: 0.6;
+        transition: 0.7s;
+      }
+      &:after {
+        transform: translateX(300px) skewX(-15deg);
+        opacity: 1;
+        transition: 0.7s;
+      }
     }
+  }
 }
 
+textarea {
+  width: 80%;
+  margin: 20px 0;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid rgba($logo-secondary, 0.5);
+  color: rgba($logo-secondary, 0.5);
+  &:focus {
+    border-bottom: 1px solid $logo-secondary;
+    color: $logo-secondary;
+    outline: 0;
+  }
 }
 
 ::-webkit-input-placeholder {
-    color: $logo-secondary;
-    font-size: 12px;
-    letter-spacing: 2px;
+  color: $logo-secondary;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 
 .page-header-contact {
-    position: relative;
-    background-image: $contact-image;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: $primary-color;
+  position: relative;
+  background-image: $contact-image;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $primary-color;
+  width: 100%;
+  height: 50vh;
+  .mask {
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 100%;
     height: 50vh;
-    .mask {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 50vh;
-        background-color: $mask-color;
-        z-index: 1;
-        opacity: $mask-opacity;
-    }
-    .header-title {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 6rem;
-        letter-spacing: 1rem;
-        color: $logo-secondary;
-        z-index: 2;
-    }
-    .cloud {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 50vh;
-        background: $header-cloud;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        animation: clouds 60s linear infinite;
-    }
+    background-color: $mask-color;
+    z-index: 1;
+    opacity: $mask-opacity;
+  }
+  .header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    letter-spacing: 1rem;
+    color: $logo-secondary;
+    z-index: 2;
+  }
+  .cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background: $header-cloud;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: clouds 60s linear infinite;
+  }
 }
