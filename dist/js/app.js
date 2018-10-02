@@ -82,25 +82,25 @@ $(document).ready(function() {
   });
   sr.reveal(".bottomFadeIn", {
     mobile: false,
-    duration: 500,
+    duration: 1000,
     origin: "bottom",
     distance: "50px"
   });
   sr.reveal(".topFadeIn", {
     mobile: false,
-    duration: 500,
+    duration: 1000,
     origin: "top",
     distance: "50px"
   });
   sr.reveal(".leftFadeIn", {
     mobile: false,
-    duration: 500,
+    duration: 1000,
     origin: "left",
     distance: "50px"
   });
   sr.reveal(".rightFadeIn", {
     mobile: false,
-    duration: 500,
+    duration: 1000,
     origin: "right",
     distance: "50px"
   });
