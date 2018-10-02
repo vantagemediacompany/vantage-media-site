@@ -70,49 +70,30 @@
         </div>
     </header>
 
-    <div class="contact-container">
-        <h1 class="brand">Vantage Media</h1>
-        <div class="wrapper">
-            <div class="company-info">
-                <h3>Vantage Media</h3>
-                <ul>
-                    <li>Austin, Texas</li>
-                    <li>409 748 9169</li>
-                    <li>VantageMediaCompany@gmail.com</li>
-                </ul>
-            </div>
-            <div class="contact">
-                <h3>Let's Talk!</h3>
-                <form action="" method="POST">
-                    <p>
-                        <label>Name</label>
-                        <input type="text" name="name">
-                    </p>
-                    <p>
-                        <label>Company</label>
-                        <input type="text" name="company">
-                    </p>
-                    <p>
-                        <label>E-Mail Address</label>
-                        <input type="email" name="email">
-                    </p>
-                    <p>
-                        <label>Phone Number</label>
-                        <input type="text" name="phone">
-                    </p>
-                    <p>
-                        <label>Message</label>
-                        <textarea name="message" rows="5"></textarea>
-                    </p>
-                    <p>
-                        <button>Submit</button>
-                    </p>
-                </form>
-
+    <div class="contact-section">
+        <div class="contact-title">
+            <div class="contact-form">
+                <h3 class="center">Let's Talk!</h3>
+                <p class="center">Contact us for custom quote</p>
+                <form class="center" id="contact" action="" method="post">
+                    <fieldset>
+                        <input placeholder="Your name*" type="text" tabindex="1" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Email Address*" type="email" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
+                    </fieldset>
+                    <fieldset class="full">
+                        <textarea placeholder="Project Description*" tabindex="4" required></textarea>
+                    </fieldset>
+                    <fieldset class="full">
+                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                    </fieldset>
             </div>
         </div>
     </div>
-
 
     <div class="pimg4">
         <div class="ptext landing-phrase">

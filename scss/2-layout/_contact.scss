@@ -1,3 +1,50 @@
+.contact-section {
+    position: relative;
+    background-image: $contactsBG;
+    background-size: cover;
+    background-position: center;
+    h3 {
+        color: $logo-secondary;
+        font-size: 3em;
+    }
+    p {
+        color: $logo-secondary;
+        font-size: 1.25em;
+        padding-bottom: 25px;
+    }
+    form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        .full {
+            grid-column: 1 / 3;
+        }
+        padding: 2em 10em 5em;
+    }
+    input,
+    textarea {
+        width: 100%;
+        margin: 20px 0;
+        background: rgba(0, 0, 0, 0);
+        border: none;
+        border-bottom: 1px solid rgba($logo-secondary, 0.5);
+        color: rgba($logo-secondary, .5);
+        &:focus {
+            border-bottom: 1px solid $logo-secondary;
+            color: $logo-secondary;
+            outline: 0;
+        }
+    }
+}
+
+}
+
+::-webkit-input-placeholder {
+    color: $logo-secondary;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
 .page-header-contact {
     position: relative;
     background-image: $contact-image;
