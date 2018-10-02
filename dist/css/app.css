@@ -301,7 +301,7 @@ html {
     overflow: hidden; }
     .contact-section button:focus {
       outline: none; }
-    .contact-section button :before {
+    .contact-section button:before {
       content: "";
       display: block;
       position: absolute;
@@ -310,9 +310,9 @@ html {
       height: 100%;
       left: 0;
       top: 0;
-      opacity: 0.5s;
+      opacity: 0.5;
       filter: blur(30px);
-      transform: translatex(-130px) skewx(-15deg); }
+      transform: translateX(-230px) skewx(-15deg); }
     .contact-section button:after {
       content: "";
       display: block;
