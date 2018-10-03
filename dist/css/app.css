@@ -259,6 +259,13 @@ html {
     background-position: center;
     animation: clouds 60s linear infinite; }
 
+.contact-address {
+  padding: 6rem 4rem;
+  background: #efefef;
+  color: #333; }
+  .contact-address hr {
+    width: 20%; }
+
 .contact-section {
   position: relative;
   background-image: url(../img/contacts-bg.jpg);
