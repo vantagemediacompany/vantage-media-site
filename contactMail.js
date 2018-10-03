@@ -12,11 +12,27 @@ app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
 
 // Static folder
-app.use("/dist", express.static(path.join(__dirname, "dist")));
+app.use("/dist", express.static(path.join(__dirname, "/dist")));
 
 // Body Parser Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+// Routes to .html
+app.get("/", (req, res) => {
+  console.log(__dirname);
+  res.sendFile(path.join(__dirname, "./dist/index.html"));
+});
+
+app.get("/services", (req, res) => {
+  console.log(__dirname);
+  res.sendFile(path.join(__dirname, "./dist/services.html"));
+});
+
+app.get("/about", (req, res) => {
+  console.log(__dirname);
+  res.sendFile(path.join(__dirname, "./dist/about.html"));
+});
 
 app.get("/contact", (req, res) => {
   res.render("contact");
