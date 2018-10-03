@@ -18,7 +18,7 @@ app.use("/dist", express.static(path.join(__dirname, "dist")));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get("/", (req, res) => {
+app.get("/contact", (req, res) => {
   res.render("contact");
 });
 
