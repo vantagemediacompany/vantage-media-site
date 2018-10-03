@@ -13,11 +13,17 @@
         font-size: 1.25em;
         padding-bottom: 25px;
     }
+    .green {
+        color: #32cd32;
+    }
     .grid-3 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
         padding: 2em 10em 5em;
+    }
+    fieldset {
+        border: none;
     }
     input {
         width: 100%;

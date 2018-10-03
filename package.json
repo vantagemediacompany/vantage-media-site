@@ -17,8 +17,13 @@
   "dependencies": {
     "alertify": "^0.3.0",
     "alertifyjs": "^1.11.1",
+    "body-parser": "^1.18.3",
     "concurrently": "^4.0.1",
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
-    "node-sass": "^4.9.3"
+    "express-handlebars": "^3.0.0",
+    "node-sass": "^4.9.3",
+    "nodemailer": "^4.6.8",
+    "xoauth2": "^1.2.0"
   }
 }
