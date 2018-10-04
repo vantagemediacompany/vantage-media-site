@@ -24,6 +24,7 @@
     "express-handlebars": "^3.0.0",
     "node-sass": "^4.9.3",
     "nodemailer": "^4.6.8",
+    "openssl": "^1.1.0",
     "xoauth2": "^1.2.0"
   }
 }
