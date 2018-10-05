@@ -105,6 +105,5 @@ $(document).ready(function() {
     distance: "50px"
   });
 
-  // Send email with form submit
   // Closing tag for document.ready
 });
