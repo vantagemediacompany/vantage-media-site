@@ -26,6 +26,8 @@ $contact-image: url(../img/contactBG.jpeg);
 $contactsBG: url(../img/contacts-bg.jpg);
 // About page
 $about-image: url(../img/aboutBG.jpeg);
+$about-trust: url(../img/aboutTrust.jpeg);
+$about-attention: url(../img/aboutAttention.jpeg);
 // Misc
 $header-cloud: url(../img/headerCloud.png);
 // Fonts
@@ -110,4 +112,8 @@ p {
   font-family: "CodeBold";
   font-size: 12px;
   letter-spacing: 1.5px;
+}
+
+.bold {
+  font-weight: 1000;
 }
