@@ -53,7 +53,7 @@ html {
     transform: rotate(45deg) translateY(2rem) translateX(2rem);
     opacity: 0; } }
 
-.landing,
+.pimg1,
 .pimg2,
 .pimg3,
 .pimg4 {
@@ -64,6 +64,7 @@ html {
   background-attachment: fixed; }
 
 .section {
+  position: relative;
   line-height: 1.8em;
   text-align: center;
   padding: 50px 80px; }
@@ -89,7 +90,7 @@ html {
   background-color: #3d4f65;
   color: #f4f4f4; }
 
-.landing {
+.pimg1 {
   background-image: url(../img/landingBG.jpeg);
   min-height: 100%; }
 
@@ -123,7 +124,7 @@ html {
   transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #f4f4f4;
-  width: 30rem;
+  width: 10rem;
   text-align: center; }
   .scroll-down.removed {
     transform: translateY(-20rem);
@@ -135,7 +136,7 @@ html {
     position: absolute;
     display: block;
     bottom: -1.5rem;
-    left: 47%;
+    left: 41%;
     transform: translate(-50%, -50%);
     width: 1.5rem;
     height: 1.5rem;
@@ -586,3 +587,90 @@ ul {
     .icons a:hover {
       color: #5c7887;
       transition: all 0.5s ease-out; }
+
+@media screen and (max-width: 768px) {
+  .header-title {
+    font-size: 3rem !important; }
+  .about-trust {
+    grid-template-columns: 1fr;
+    padding: 0; }
+    .about-trust img {
+      padding: 5em; }
+    .about-trust .left {
+      padding: 0 3em 3em 3em; }
+  .about-attention {
+    grid-template-columns: 1fr;
+    padding: 0; }
+    .about-attention img {
+      padding: 0 3em 3em 3em; }
+    .about-attention .left {
+      padding: 5em; }
+  .service-header {
+    grid-template-columns: 1fr;
+    padding: 3em; }
+  .design {
+    grid-template-columns: 1fr;
+    padding: 0; }
+    .design img {
+      padding: 5em 3em 0 3em; }
+    .design .left {
+      padding: 5em; }
+  .marketing {
+    grid-template-columns: 1fr;
+    padding: 0; }
+    .marketing img {
+      padding: 0 3em 5em 3em; }
+    .marketing .left {
+      padding: 5em; }
+  .tailor {
+    grid-template-columns: 1fr;
+    padding: 0; }
+    .tailor img {
+      padding: 5em 3em 0 3em; }
+    .tailor .left {
+      padding: 5em; }
+  .versatile {
+    grid-template-columns: 1fr;
+    padding: 0; }
+    .versatile img {
+      padding: 0 3em 5em 3em; }
+    .versatile .left {
+      padding: 5em; }
+  .contact-form .form-top {
+    grid-template-columns: 1fr !important; }
+  .contact-form textarea {
+    width: 60%; } }
+
+@media screen and (max-width: 500px) {
+  .menu-branding {
+    position: absolute;
+    left: 8px;
+    top: 37px;
+    font-size: 1.15em; }
+  .menu-btn {
+    position: fixed;
+    right: 20px; }
+  .border {
+    font-size: 0.65em; }
+  .header-title {
+    font-size: 2rem !important; }
+  .grid-2 {
+    grid-template-columns: 1fr; }
+    .grid-2 .about-trust-media {
+      display: none; }
+  .grid-2 {
+    grid-template-columns: 1fr; }
+    .grid-2 .about-attention-media {
+      display: none; }
+    .grid-2 .left {
+      padding: 3em 3em; }
+  .service-media {
+    display: none; }
+  .form-top input {
+    position: absolute;
+    left: 15%;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 70vw !important; }
+  .contact-form textarea {
+    width: 75%; } }

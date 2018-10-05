@@ -1,15 +1,134 @@
 // Widescreens
-@include mediaXl {
-}
+@include mediaXl {}
 
 // Desktops & Laptops
-@include mediaLg {
-}
+@include mediaLg {}
 
 // Tablets & Small Laptops
 @include mediaMd {
+    .header-title {
+        font-size: 3rem !important;
+    }
+    .about-trust {
+        grid-template-columns: 1fr;
+        padding: 0;
+        img {
+            padding: 5em;
+        }
+        .left {
+            padding: 0 3em 3em 3em;
+        }
+    }
+    .about-attention {
+        grid-template-columns: 1fr;
+        padding: 0;
+        img {
+            padding: 0 3em 3em 3em;
+        }
+        .left {
+            padding: 5em;
+        }
+    }
+    .service-header {
+        grid-template-columns: 1fr;
+        padding: 3em;
+    }
+    .design {
+        grid-template-columns: 1fr;
+        padding: 0;
+        img {
+            padding: 5em 3em 0 3em;
+        }
+        .left {
+            padding: 5em;
+        }
+    }
+    .marketing {
+        grid-template-columns: 1fr;
+        padding: 0;
+        img {
+            padding: 0 3em 5em 3em;
+        }
+        .left {
+            padding: 5em;
+        }
+    }
+    .tailor {
+        grid-template-columns: 1fr;
+        padding: 0;
+        img {
+            padding: 5em 3em 0 3em;
+        }
+        .left {
+            padding: 5em;
+        }
+    }
+    .versatile {
+        grid-template-columns: 1fr;
+        padding: 0;
+        img {
+            padding: 0 3em 5em 3em;
+        }
+        .left {
+            padding: 5em;
+        }
+    }
+    .contact-form {
+        .form-top {
+            grid-template-columns: 1fr !important;
+        }
+        textarea {
+            width: 60%;
+        }
+    }
 }
 
 // Smartphones
 @include mediaSm {
+    .menu-branding {
+        position: absolute;
+        left: 8px;
+        top: 37px;
+        font-size: 1.15em;
+    }
+    .menu-btn {
+        position: fixed;
+        right: 20px;
+    }
+    .border {
+        font-size: 0.65em;
+    }
+    .header-title {
+        font-size: 2rem !important;
+    }
+    .grid-2 {
+        grid-template-columns: 1fr;
+        .about-trust-media {
+            display: none;
+        }
+    }
+    .grid-2 {
+        grid-template-columns: 1fr;
+        .about-attention-media {
+            display: none;
+        }
+        .left {
+            padding: 3em 3em;
+        }
+    }
+    .service-media {
+        display: none;
+    }
+    .form-top {
+        input {
+            position: absolute;
+            left: 15%;
+            padding: 0 !important;
+            margin: 0 !important;
+            width: 70vw !important;
+        }
+    }
+    .contact-form textarea {
+        width: 75%;
+    }
 }
