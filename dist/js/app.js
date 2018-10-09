@@ -37,6 +37,12 @@ $(document).ready(function() {
   t1.reverse();
   $(document).on("click", ".menu-btn", function() {
     t1.reversed(!t1.reversed());
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 1200);
+  });
+  $(document).on("click", "a", function() {
+    t1.reversed(!t1.reversed());
   });
 
   // NavBar black animation on scroll
