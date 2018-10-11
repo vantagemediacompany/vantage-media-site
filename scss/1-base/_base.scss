@@ -98,6 +98,15 @@ p {
   font-weight: 1000;
 }
 
+.trans-cover {
+  z-index: 9999;
+  position: absolute;
+  background: $secondary-color;
+  height: 100vh;
+  width: 100%;
+  left: -100%;
+}
+
 // Media Query Mixins
 @mixin mediaSm {
   @media screen and (max-width: 580px) {

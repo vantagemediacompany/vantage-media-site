@@ -2,7 +2,7 @@
 .menu-branding {
     position: fixed;
     float: left;
-    margin: 30px 36px;
+    margin: 35px 36px;
     color: $logo-secondary;
     font-size: 1.5em;
     letter-spacing: 3px;
@@ -18,7 +18,7 @@
 
 nav {
     position: fixed;
-    z-index: 9999;
+    z-index: 9000;
     top: 0;
     width: 100%;
     ul {
@@ -30,6 +30,7 @@ nav {
         padding: 0;
         float: right;
         transition: 1s;
+        z-index: 9001;
         li {
             display: inline-block;
             padding: 20px;
