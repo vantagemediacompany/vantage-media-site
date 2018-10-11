@@ -1,115 +1,69 @@
-// Positioning for nav
-.navbar {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  z-index: 9998 !important;
-  transition: 0.3s;
-  &.black {
-    position: fixed;
-    right: 35px;
-    top: 0;
-    background: $logo-secondary;
-    height: 100px;
-    box-shadow: 0px 5px 15px #333;
-    z-index: 3;
-    .menu-span,
-    .menu-branding,
-    .menu,
-    .menu-btn {
-      color: $secondary-color;
-    }
-    .btn-line-one,
-    .btn-line-two {
-      background-color: $secondary-color;
-    }
-  }
-}
-
-// Branding in top left
+// Nav
 .menu-branding {
-  position: fixed;
-  top: 35px;
-  left: 35px;
-  font-size: 1.5em;
-  color: $logo-secondary;
-  letter-spacing: 3px;
-  z-index: 3;
-  .brand-secondary {
-    font-family: "CodeLight";
-  }
-  .current-nav {
-    font-size: 0.5em;
-    vertical-align: 25%;
-    font-family: "CodeBold";
-  }
-}
-
-// X in top right
-.menu-btn {
-  position: fixed;
-  margin: 1.4em;
-  padding: 1em;
-  width: 40px;
-  height: 12px;
-  top: 0;
-  right: 35px;
-  z-index: 9999;
-  cursor: pointer;
-  .menu-span {
-    position: relative;
+    position: fixed;
+    float: left;
+    margin: 30px 36px;
     color: $logo-secondary;
-    top: 2px;
-    left: 1px;
-    font-family: "CodeLight";
-  }
-  .btn-line-one {
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    .brand-secondary {
+        font-family: "CodeLight";
+    }
+    .current-nav {
+        font-size: 0.5em;
+        vertical-align: 25%;
+        font-family: "CodeBold";
+    }
+}
+
+nav {
     position: fixed;
-    width: 40px;
-    height: 2px;
-    background: $logo-secondary;
-    z-index: 3;
-  }
-  .btn-line-two {
-    position: fixed;
-    width: 40px;
-    height: 2px;
-    background: $logo-secondary;
-    z-index: 3;
-  }
-}
-
-.menu {
-  z-index: 3;
-  position: fixed;
-  background: $secondary-color;
-  height: 100vh;
-  width: 100%;
-  top: -100%;
-}
-
-.menu-nav {
-  padding: 8em 0 0 2em;
-  text-align: left;
-  z-index: 3;
-}
-
-ul {
-  list-style: none;
-  text-decoration: none;
-  columns: $logo-secondary;
-  font-family: "CodeLight";
-  font-size: 42px;
-  z-index: 3;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+    ul {
+        list-style: none;
+        font-family: "CodeLight";
+        background: rgba(0, 0, 0, 0);
+        overflow: hidden;
+        color: $logo-secondary;
+        padding: 0;
+        float: right;
+        transition: 1s;
+        li {
+            display: inline-block;
+            padding: 20px;
+            a {
+                text-decoration: none;
+                color: $logo-secondary;
+                font-size: 1.15em;
+            }
+        }
+    }
+    &.black {
+        background: $logo-secondary;
+        transition: 1s;
+        box-shadow: 0px 5px 15px #333;
+        .menu-nav a,
+        .menu-btn,
+        .menu-branding {
+            color: $secondary-color;
+        }
+    }
+    .menu-btn {
+        width: 100%;
+        background: $logo-secondary;
+        text-align: right;
+        box-sizing: border-box;
+        padding: 14px 24px;
+        cursor: pointer;
+        color: $logo-secondary;
+        display: none;
+    }
 }
 
 .current {
-  color: $logo-secondary;
-  font-family: "CodeBold";
-  font-size: 24px;
+    color: $logo-secondary;
+    font-family: "CodeBold";
+    font-size: 24px;
 }

@@ -85,15 +85,71 @@
 
 // Smartphones
 @include mediaSm {
-    .menu-branding {
-        position: absolute;
-        left: 8px;
-        top: 37px;
-        font-size: 1.15em;
+    nav {
+        box-shadow: 0px 5px 15px #333;
+        width: 100vw;
+        .menu-btn {
+            display: block;
+        }
+        .menu {
+            width: 100vw;
+        }
+        .menu-branding {
+            position: fixed;
+            top: 0;
+            font-size: 1em;
+            margin: 20px 15px;
+        }
+        ul {
+            max-height: 0px;
+            padding: 0;
+            margin: 0;
+            width: 100vw !important;
+            box-shadow: 0px 15px 20px #333;
+            li {
+                box-sizing: border-box;
+                width: 100vw;
+                text-align: center;
+            }
+        }
+        &.black {
+            height: 60px;
+        }
+        .menu-branding,
+        .menu-btn,
+        .menu-nav a {
+            color: $secondary-color;
+        }
     }
-    .menu-btn {
-        position: fixed;
-        right: 20px;
+    .menu-nav {
+        margin: auto;
+        padding: auto;
+        width: 100vw;
+        a {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+        .nav-item {
+            width: 100vw;
+        }
+        &.showing {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .showing {
+        max-height: 20em;
+        width: 100%;
+        background: $logo-secondary;
+        a {
+            color: $secondary-color;
+            width: 100%;
+            text-align: center;
+        }
+        .nav-item {
+            width: 100vw;
+        }
     }
     .border {
         font-size: 0.65em;

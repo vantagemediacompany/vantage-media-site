@@ -1,48 +1,53 @@
 $(document).ready(function() {
-  const t1 = new TimelineMax({ paused: true });
+  // const t1 = new TimelineMax({ paused: true });
 
-  //   Menu animations
-  t1.to(".btn-line-one", 0.8, {
-    y: 6,
-    rotation: 45,
-    ease: Expo.easeInOut
-  });
+  // //   Menu animations
+  // t1.to(".btn-line-one", 0.8, {
+  //   y: 6,
+  //   rotation: 45,
+  //   ease: Expo.easeInOut
+  // });
 
-  t1.to(".btn-line-two", 0.8, {
-    y: -18,
-    rotation: -45,
-    ease: Expo.easeInOut,
-    delay: -0.8
-  });
+  // t1.to(".btn-line-two", 0.8, {
+  //   y: -18,
+  //   rotation: -45,
+  //   ease: Expo.easeInOut,
+  //   delay: -0.8
+  // });
 
-  t1.to(".menu-span", 0.8, {
-    opacity: 0,
-    ease: Expo.easeInOut,
-    delay: -1
-  });
+  // t1.to(".menu-span", 0.8, {
+  //   opacity: 0,
+  //   ease: Expo.easeInOut,
+  //   delay: -1
+  // });
 
-  t1.to(".menu", 1, {
-    top: "0%",
-    ease: Expo.easeInOut,
-    delay: -1
-  });
+  // t1.to(".menu", 1, {
+  //   top: "0%",
+  //   ease: Expo.easeInOut,
+  //   delay: -1
+  // });
 
-  t1.staggerFrom(
-    ".menu ul li",
-    1,
-    { x: -200, opacity: 0, ease: Expo.easeOut },
-    0.3
-  );
+  // t1.staggerFrom(
+  //   ".menu ul li",
+  //   1,
+  //   { x: -200, opacity: 0, ease: Expo.easeOut },
+  //   0.3
+  // );
 
-  t1.reverse();
-  $(document).on("click", ".menu-btn", function() {
-    t1.reversed(!t1.reversed());
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 1200);
-  });
-  $(document).on("click", "a", function() {
-    t1.reversed(!t1.reversed());
+  // t1.reverse();
+  // $(document).on("click", ".menu-btn", function() {
+  //   t1.reversed(!t1.reversed());
+  //   setTimeout(() => {
+  //     window.scrollTo(0, 0);
+  //   }, 1200);
+  // });
+  // $(document).on("click", "a", function() {
+  //   t1.reversed(!t1.reversed());
+  // });
+
+  // Menu toggle-button
+  $(".menu-btn").on("click", function() {
+    $("nav ul").toggleClass("showing");
   });
 
   // NavBar black animation on scroll
@@ -56,7 +61,7 @@ $(document).ready(function() {
 
   //   Scroll reveal animations
   window.sr = ScrollReveal();
-  sr.reveal(".menu-btn", {
+  sr.reveal(".menu-nav li", {
     mobile: false,
     duration: 2000,
     origin: "right",
