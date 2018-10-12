@@ -51,16 +51,17 @@ nav {
             color: $secondary-color;
         }
     }
-    .menu-btn {
-        width: 100%;
-        background: $logo-secondary;
-        text-align: right;
-        box-sizing: border-box;
-        padding: 14px 24px;
-        cursor: pointer;
-        color: $logo-secondary;
-        display: none;
-    }
+}
+
+.menu-btn {
+    width: 100%;
+    background: $logo-secondary;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 14px 24px;
+    cursor: pointer;
+    color: $logo-secondary;
+    display: none;
 }
 
 .current {

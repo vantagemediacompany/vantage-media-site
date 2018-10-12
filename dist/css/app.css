@@ -546,15 +546,16 @@ nav {
     nav.black .menu-btn,
     nav.black .menu-branding {
       color: #3d4f65; }
-  nav .menu-btn {
-    width: 100%;
-    background: #f4f4f4;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 14px 24px;
-    cursor: pointer;
-    color: #f4f4f4;
-    display: none; }
+
+.menu-btn {
+  width: 100%;
+  background: #f4f4f4;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 14px 24px;
+  cursor: pointer;
+  color: #f4f4f4;
+  display: none; }
 
 .current {
   color: #f4f4f4;
@@ -627,16 +628,23 @@ nav {
     width: 60%; } }
 
 @media screen and (max-width: 580px) {
+  .menu-btn {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: block;
+    color: #3d4f65;
+    box-shadow: 0px 5px 15px #333; }
   nav {
     box-shadow: 0px 5px 15px #333;
-    width: 100vw; }
-    nav .menu-btn {
-      display: block; }
+    width: 100vw;
+    transition: 0.3s; }
     nav .menu {
       width: 100vw; }
     nav .menu-branding {
       position: fixed;
       top: 0;
+      z-index: 9999;
       font-size: 1em;
       margin: 20px 15px; }
     nav ul {
@@ -649,15 +657,11 @@ nav {
         box-sizing: border-box;
         width: 100vw;
         text-align: center; }
-    nav.black {
-      height: 60px; }
     nav .menu-branding,
     nav .menu-btn,
     nav .menu-nav a {
       color: #3d4f65; }
   .menu-nav {
-    margin: auto;
-    padding: auto;
     width: 100vw; }
     .menu-nav a {
       padding: 0;
@@ -669,6 +673,8 @@ nav {
       margin: 0;
       padding: 0; }
   .showing {
+    position: fixed;
+    top: 7%;
     max-height: 20em;
     width: 100%;
     background: #f4f4f4; }

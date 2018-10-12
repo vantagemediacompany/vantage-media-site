@@ -46,6 +46,11 @@ $(document).ready(function() {
     origin: "right",
     distance: "300px"
   });
+  sr.reveal(".menu-btn i", {
+    duration: 2000,
+    origin: "right",
+    distance: "300px"
+  });
   sr.reveal(".menu-branding", {
     duration: 2000,
     origin: "left",
