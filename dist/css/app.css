@@ -668,7 +668,7 @@ nav {
   .menu-nav {
     width: 100vw;
     position: fixed;
-    top: 7%; }
+    top: 8%; }
     .menu-nav a {
       padding: 0;
       margin: 0;
@@ -680,7 +680,7 @@ nav {
       padding: 0; }
   .showing {
     position: fixed;
-    top: 7%;
+    top: 8%;
     max-height: 20em;
     width: 100%;
     background: #f4f4f4; }
