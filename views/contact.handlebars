@@ -28,103 +28,110 @@
 </head>
 
 <body>
+
+    <div class="screen-container">
+        <div class="trans-overlay"></div>
+    </div>
+
     <div class="menu-btn">
         <i class="fa fa-bars fa-2x"></i>
     </div>
     <div id="barba-wrapper">
         <div class="barba-container">
+            <div class="trans-wrapper">
+                <nav class="navbar">
 
-            <nav class="navbar">
-
-                <a href="/">
-                    <div class="menu-branding">
-                        <div class="logo">Vantage<span class="brand-secondary"> Media |</span><span class="current-nav">
-                                Contact Us</span></div>
+                    <a href="/">
+                        <div class="menu-branding">
+                            <div class="logo">Vantage<span class="brand-secondary"> Media |</span><span class="current-nav">
+                                    Contact Us</span></div>
+                        </div>
+                    </a>
+                    <div class="menu">
+                        <ul class="menu-nav">
+                            <li class="nav-item">
+                                <a href="/" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/about" class="nav-link">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/services" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/contact" class="nav-link current">Contact Us</a>
+                            </li>
+                        </ul>
                     </div>
-                </a>
-                <div class="menu">
-                    <ul class="menu-nav">
-                        <li class="nav-item">
-                            <a href="/" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/about" class="nav-link">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/services" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/contact" class="nav-link current">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                </nav>
 
-            <header>
-                <div class="center page-header-contact">
-                    <div class="mask"></div>
-                    <div class="header-title topFadeIn">
-                        Contact US
+                <header>
+                    <div class="center page-header-contact">
+                        <div class="mask"></div>
+                        <div class="header-title topFadeIn">
+                            Contact US
+                        </div>
+                        <div class="cloud"></div>
                     </div>
-                    <div class="cloud"></div>
+                </header>
+
+                <div class="contact-address center">
+                    <h1 class="address-header">Vantage Media Company</h1>
+                    <hr>
+                    <p class="city-state">Austin, Texas 78736</p>
+                    <p class="phone">(409)748-9169</p>
+                    <p class="email">info@vantagemediacompany.com</p>
                 </div>
-            </header>
-
-            <div class="contact-address center">
-                <h1 class="address-header">Vantage Media Company</h1>
-                <hr>
-                <p class="city-state">Austin, Texas 78736</p>
-                <p class="phone">(409)748-9169</p>
-                <p class="email">info@vantagemediacompany.com</p>
-            </div>
 
 
-            <div class="contact-section">
-                <div class="contact-title">
-                    <div class="contact-form">
-                        <h3 class="center">Let's Talk!</h3>
-                        <p class="center">Contact us for custom quote</p>
-                        <p class="green center">{{msg}}</p>
-                        <form method="POST" action="send" class="center" id="contact">
-                            <div class="grid-3 form-top">
+                <div class="contact-section">
+                    <div class="contact-title">
+                        <div class="contact-form">
+                            <h3 class="center">Let's Talk!</h3>
+                            <p class="center">Contact us for custom quote</p>
+                            <p class="green center">{{msg}}</p>
+                            <form method="POST" action="send" class="center" id="contact">
+                                <div class="grid-3 form-top">
+                                    <fieldset>
+                                        <input placeholder="Your name*" type="text" name="name" tabindex="1" required
+                                            autofocus>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input placeholder="Your Email Address*" type="email" name="email" tabindex="2"
+                                            required>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input placeholder="Your Phone Number (optional)" type="tel" name="phone"
+                                            tabindex="3">
+                                    </fieldset>
+                                </div>
                                 <fieldset>
-                                    <input placeholder="Your name*" type="text" name="name" tabindex="1" required
-                                        autofocus>
+                                    <textarea placeholder="Project Description*" name="message" tabindex="4" required></textarea>
                                 </fieldset>
                                 <fieldset>
-                                    <input placeholder="Your Email Address*" type="email" name="email" tabindex="2"
-                                        required>
+                                    <button type="submit" id="contact-submit">Send!</button>
                                 </fieldset>
-                                <fieldset>
-                                    <input placeholder="Your Phone Number (optional)" type="tel" name="phone" tabindex="3">
-                                </fieldset>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pimg4">
+                    <div class="ptext landing-phrase">
+                        <div class="border">
+                            <div class="icons iconsFooter">
+                                <a href="https://twitter.com/VantageMediaLLC" target="_blank">
+                                    <i class="fab fa-twitter fa-lg"></i>
+                                </a>
+                                <a href="https://www.facebook.com/VantageMediaCompany/" target="_blank">
+                                    <i class="fab fa-facebook fa-lg"></i>
+                                </a>
+                                <a href="https://www.instagram.com/vantagemediacompany/" target="_blank">
+                                    <i class="fab fa-instagram fa-lg"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/vantage-media-company/" target="_blank">
+                                    <i class="fab fa-linkedin fa-lg"></i>
+                                </a>
                             </div>
-                            <fieldset>
-                                <textarea placeholder="Project Description*" name="message" tabindex="4" required></textarea>
-                            </fieldset>
-                            <fieldset>
-                                <button type="submit" id="contact-submit">Send!</button>
-                            </fieldset>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pimg4">
-                <div class="ptext landing-phrase">
-                    <div class="border">
-                        <div class="icons iconsFooter">
-                            <a href="https://twitter.com/VantageMediaLLC" target="_blank">
-                                <i class="fab fa-twitter fa-lg"></i>
-                            </a>
-                            <a href="https://www.facebook.com/VantageMediaCompany/" target="_blank">
-                                <i class="fab fa-facebook fa-lg"></i>
-                            </a>
-                            <a href="https://www.instagram.com/vantagemediacompany/" target="_blank">
-                                <i class="fab fa-instagram fa-lg"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/company/vantage-media-company/" target="_blank">
-                                <i class="fab fa-linkedin fa-lg"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
