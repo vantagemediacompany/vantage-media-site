@@ -14,7 +14,7 @@ $(document).ready(function() {
         .promise()
         .done(() => {
           nc.css("visibility", "visible");
-          nc.scrollTop();
+          nc.scrollTop(0);
           nc.fadeIn(1000, function() {
             _this.done();
           });
