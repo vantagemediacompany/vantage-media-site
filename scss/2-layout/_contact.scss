@@ -147,6 +147,12 @@
     }
 }
 
+.booking {
+    &:hover {
+        color: $primary-color;
+    }
+}
+
 textarea {
     width: 80%;
     margin: 20px 0;

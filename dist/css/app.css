@@ -418,6 +418,9 @@ html {
         opacity: 1;
         transition: 0.7s; }
 
+.booking:hover {
+  color: #5c7887; }
+
 textarea {
   width: 80%;
   margin: 20px 0;
