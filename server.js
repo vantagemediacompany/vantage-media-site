@@ -4,6 +4,8 @@ const exphbs = require("express-handlebars");
 const path = require("path");
 const nodemailer = require("nodemailer");
 require("dotenv").config();
+const { google } = require("googleapis");
+const OAuth2 = google.auth.OAuth2;
 
 const app = express();
 
@@ -58,14 +60,31 @@ app.post("/send", (req, res) => {
     <p>${req.body.message}</p>
     `;
 
-  // create reusable transporter object using the default SMTP transport
-  let transporter = nodemailer.createTransport({
-    service: "Gmail",
+  // NEW CODE FOR EMAILER
+  const oauth2Client = new OAuth2(
+    process.env.CLIENT_ID, // ClientID
+    process.env.CLIENT_SECRET, // Client Secret
+    "https://developers.google.com/oauthplayground" // Redirect URL
+  );
+
+  oauth2Client.setCredentials({
+    refresh_token: process.env.REFRESH_TOKEN
+  });
+  const tokens = await oauth2Client.refreshAccessToken();
+  const accessToken = tokens.credentials.access_token;
+
+  const smtpTransport = nodemailer.createTransport({
+    service: "gmail",
     auth: {
+      type: "OAuth2",
       user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_PASS
+      clientId: process.env.CLIENT_ID,
+      clientSecret: process.env.CLIENT_SECRET,
+      refreshToken: process.env.REFRESH_TOKEN,
+      accessToken: accessToken
     }
   });
+  //
 
   // setup email data with unicode symbols
   let mailOptions = {
@@ -77,7 +96,7 @@ app.post("/send", (req, res) => {
   };
 
   // send mail with defined transport object
-  transporter.sendMail(mailOptions, (error, info) => {
+  smtpTransport.sendMail(mailOptions, (error, info) => {
     if (error) {
       return console.log(error);
     }
