@@ -67,12 +67,14 @@ app.post("/send", (req, res) => {
     "https://developers.google.com/oauthplayground" // Redirect URL
   );
 
+  // Sets refresh token
   oauth2Client.setCredentials({
     refresh_token: process.env.REFRESH_TOKEN
   });
-  const tokens = await oauth2Client.refreshAccessToken();
-  const accessToken = tokens.credentials.access_token;
 
+  oauth2Client.getAccessToken().then(res => res.token);
+
+  // Sets up user
   const smtpTransport = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -81,7 +83,7 @@ app.post("/send", (req, res) => {
       clientId: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
       refreshToken: process.env.REFRESH_TOKEN,
-      accessToken: accessToken
+      accessToken: res.token
     }
   });
   //
