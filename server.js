@@ -59,7 +59,7 @@ app.post("/send", (req, res) => {
     `;
 
   // create reusable transporter object using the default SMTP transport
-  let transporter = nodemailer.createTransport({
+  let transporter = nodemailer.createTransport("SMTP", {
     service: "Gmail",
     auth: {
       user: process.env.GMAIL_USER,
