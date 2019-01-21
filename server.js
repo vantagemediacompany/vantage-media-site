@@ -60,16 +60,12 @@ app.post("/send", (req, res) => {
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
-    host: "smtp.mail.yahoo.com",
-    port: 465,
-    service: "yahoo",
+    service: "hotmail",
     secure: false,
     auth: {
       user: process.env.GMAIL_USER,
       pass: process.env.GMAIL_PASS
-    },
-    debug: false,
-    logger: true
+    }
   });
 
   // setup email data with unicode symbols
