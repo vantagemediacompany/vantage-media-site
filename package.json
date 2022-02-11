@@ -22,7 +22,7 @@
     "concurrently": "^4.0.1",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
-    "express-handlebars": "^3.0.0",
+    "express-handlebars": "^5.3.1",
     "googleapis": "^36.0.0",
     "node-sass": "^4.9.3",
     "nodemailer": "^5.1.1",
